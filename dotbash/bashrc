@@ -1,0 +1,40 @@
+# long list
+alias ll='ls -lrt'
+
+# grep recursive
+search (){
+  find . -name "*"\
+    | xargs grep -i ${1}\
+    | grep -v svn\
+    | grep -v git
+}
+
+# find and kill
+killg (){
+  ps -ef\
+    | grep -i ${1}\
+    | grep -v grep\
+    | awk '{print $2}'\
+    | xargs kill -9
+}
+
+#copy and go to dir
+cpg (){
+  if [ -d "$2" ];then
+    cp $1 $2 && cd $2
+  else
+    cp $1 $2
+  fi
+}
+
+#move and go to dir
+mvg (){
+  if [ -d "$2" ];then
+    mv $1 $2 && cd $2
+  else
+    mv $1 $2
+  fi
+}
+
+### Added by the Heroku Toolbelt
+export PATH="/usr/local/heroku/bin:$PATH"

@@ -1,0 +1,6 @@
+# source bashrc
+source ~/.bashrc
+
+# prompt setup
+export PS1="[\u@\h \W \t]\$ "
+
