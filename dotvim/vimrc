@@ -51,9 +51,9 @@ colorscheme wombat
 set smartcase
 
 " backup
-set backupdir=~/dotvim/backup,.
-set directory=~/dotvim/swap,.
-set undodir=~/dotvim/undo,.
+set backupdir=~/.vim/backup,.
+set directory=~/.vim/swap,.
+set undodir=~/.vim/undo,.
 
 " disable toolbar
 if has("gui_running")
@@ -88,7 +88,7 @@ let mapleader=","
 
 " nerd tree
     "give a shortcut key to NERD Tree
-map <F2> :NERDTreeToggle<CR> 
+map <F2> :NERDTreeToggle<CR>
 nnoremap <Leader>nt :NERDTreeToggle <CR>
 nnoremap <Leader>nf :NERDTreeFind <CR>
 let NERDTreeShowBookmarks=1
