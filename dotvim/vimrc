@@ -58,6 +58,7 @@ set undodir=~/.vim/undo,.
 " disable toolbar
 if has("gui_running")
   set guioptions=egmrt
+  set showtabline=0
 endif
 
 " search highlight deleting
