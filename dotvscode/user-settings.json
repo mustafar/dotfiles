@@ -1,0 +1,9 @@
+{
+    "editor.detectIndentation": true,
+    "editor.fontSize": 16,
+    "editor.minimap.enabled": false,
+    "explorer.openEditors.visible": 0,
+    "editor.rulers": [ 100 ],
+    "git.enableSmartCommit": true,
+    "vim.disableExtension": false
+}
