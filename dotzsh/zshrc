@@ -9,16 +9,6 @@ docker-rm-rf () {
   docker rm $(docker ps -a -q)
 }
 
-docker-start() {
-  docker-machine start default && \
-  eval $(docker-machine env)
-}
-
-docker-restart() {
-  docker-machine stop default && \
-  docker-start
-}
-
 docker-sync-clock() {
   docker run -it --rm --privileged --pid=host debian nsenter -t 1 -m -u -n -i date -u $(date -u +%m%d%H%M%Y)
 }
