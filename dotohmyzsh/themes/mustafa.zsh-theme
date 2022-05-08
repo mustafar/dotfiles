@@ -10,7 +10,8 @@ local input_color=220
 # Error message on command returning non-zero exit code
 error_msg="\e[0;31mCommand failed"
 
-PROMPT="$FG[${time_color}]%D{%H:%M} $FG[${dir_color}]%.$FG[${input_color}] > "
+PROMPT="$FG[${time_color}]%D{%H:%M} $FG[${dir_color}]%.$FG[${input_color}]
+—> "
 
 # Resetting color to default white.
 preexec()
